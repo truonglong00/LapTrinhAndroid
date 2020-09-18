@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Baitap309</string>
+    <string-array name="trinhlanhdao">
+        <item>Tất cả</item>
+        <item>Thạc sỹ</item>
+        <item>Đại học</item>
+        <item>Cao học</item>
+    </string-array>
+    <string-array name="noigui">
+    <item>Nơi khác</item>
+    <item>VKU</item>
+    <item>Quảng Bình</item>
+    <item>Trương Tiểu Long</item>
+</string-array>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/tieude"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:textColor="#ffff"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:textSize="20sp"
+    android:text="Danh sách sản phẩm" />
+
+<TextView
+    android:id="@+id/masanpham"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tieude"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="23dp"
+    android:text="Mã sản phẩm"
+    android:textColor="#000"
+    android:textSize="20sp"
+    />
+
+<EditText
+    android:id="@+id/txtmasanpham"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tieude"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="69dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_toRightOf="@+id/masanpham"
+    android:background="@drawable/maunen"
+    android:drawableLeft="@drawable/ic_masanpham"
+    android:hint="Nhập mã sản phẩm"
+    android:padding="10dp" />
+<TextView
+    android:id="@+id/mota"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/masanpham"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="23dp"
+    android:text="Mô tả"
+    android:textColor="#000"
+    android:textSize="20sp"
+    android:textStyle="" />
+
+<EditText
+    android:id="@+id/txtmota"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtmasanpham"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="69dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_toRightOf="@+id/masanpham"
+    android:background="@drawable/maunen"
+    android:drawableLeft="@drawable/ic_baseline_create_24"
+    android:hint="Nhập mô tả"
+    android:padding="10dp" />
+<TextView
+    android:id="@+id/gia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mota"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="23dp"
+    android:text="Giá"
+    android:textColor="#000"
+    android:textSize="20sp"
+    android:textStyle="" />
+
+<EditText
+    android:id="@+id/txtgia"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtmota"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="69dp"
+
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_toRightOf="@+id/masanpham"
+    android:background="@drawable/maunen"
+    android:drawableLeft="@drawable/ic_baseline_create_24"
+    android:hint="Nhập mô tả"
+    android:inputType="date"
+    android:padding="10dp" />
+<Button
+    android:id="@+id/btnThem"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/gia"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:textColor="#ffff"
+    android:text="Thêm"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/btnThem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+</RelativeLayout>

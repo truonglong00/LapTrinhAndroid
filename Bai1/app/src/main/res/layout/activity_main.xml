@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên đăng nhập:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/edten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên"
+        android:layout_toRightOf="@+id/ten"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ten"
+        android:text="Mật khẩu:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edten"
+        android:layout_toRightOf="@+id/pass"
+        android:hint="Nhập mật khẩu"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:onClick="btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pass"
+        android:text="Đăng nhập"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

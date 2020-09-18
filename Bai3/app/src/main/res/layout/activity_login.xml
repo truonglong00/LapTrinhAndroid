@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập tên của bạn"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+    />
+    <EditText
+        android:id="@+id/txttukhoa"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_ic"
+        app:layout_constraintTop_toBottomOf="@+id/ten"
+        android:hint="Nhập tên của bạn"
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/Login"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@id/txttukhoa"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/xinchao"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xin chào"
+        />
+    <Button
+        android:id="@+id/thoat"
+        android:layout_below="@+id/xinchao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoát"/>
+
+</RelativeLayout>
