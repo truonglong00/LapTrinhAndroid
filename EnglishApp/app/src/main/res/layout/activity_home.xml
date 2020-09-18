@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luyện từ mới"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/btndanhsachtu"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff"
+        android:layout_below="@id/title"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Danh sách từ"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:shadowColor="@color/colorPrimary"
+        android:background="@drawable/luyenchu"
+        />
+    <Button
+        android:id="@+id/btnluyentap"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/btndanhsachtu"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/title"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Luyện tập"
+        android:background="@drawable/luyentu"
+        />
+    <Button
+        android:id="@+id/btnkiemtra"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/btndanhsachtu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Kiểm tra"
+        android:background="@drawable/luyentu"
+        />
+    <Button
+        android:id="@+id/btntuhangngay"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/btnkiemtra"
+        android:layout_below="@id/btndanhsachtu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Kiểm tra"
+        android:background="@drawable/kiemtra"
+        />
+    <Button
+        android:id="@+id/btncaidatnangcao"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cài đặt nâng cao"
+        android:layout_below="@id/btntuhangngay"
+        />
+    <Button
+        android:id="@+id/btnbatcauhoingaunhien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bật câu hỏi ngẫu nhiên"
+        android:layout_below="@id/btncaidatnangcao"
+        />
+    <TextView
+        android:id="@+id/txtbaomat"
+        android:layout_below="@id/btnbatcauhoingaunhien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/baomat"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
